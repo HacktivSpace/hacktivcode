@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  @apply h-screen w-[70%] mx-auto flex flex-col items-center;
+}
+
+.gradient-1 {
+  height: screen;
+  z-index: -3;
+  width: 100%;
+  max-width: 640px;
+  background-image: radial-gradient(
+      at 27% 37%,
+      hsla(215, 98%, 61%, 1) 0px,
+      transparent 0%
+    ),
+    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+  position: absolute;
+  content: "";
+  width: 100%;
+  /* height: 100%; */
+  filter: blur(100px) saturate(150%);
+  top: 80px;
+  opacity: 0.15;
+  /* @apply  bg-red-900; */
+}
+
+.card-neuo {
+  border-radius: 20px;
+  background: linear-gradient(145deg, #cacaca73, #f0f0f089);
+  /* box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff; */
+  @apply  dark:shadow-none dark:bg-gray-950 dark:text-gray-50 
+}
+
+.theme-btn{
+  @apply px-2.5 py-2  rounded-lg w-fit mx-auto text-gray-700 dark:text-gray-200;
+}
